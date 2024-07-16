@@ -2,7 +2,7 @@ import "../styles/searchbar.css";
 import { IoSearch } from "react-icons/io5";
 import { FaCamera } from "react-icons/fa6";
 
-const Searchbar = ({handleSearchKey,searchKey}) => {
+const Searchbar = (searchKey: any) => {
   const maxCharLimit = 32;
   var searchValue = searchKey;
   const handleSearchInputChange = (e: { target: { value: any } }) => {
