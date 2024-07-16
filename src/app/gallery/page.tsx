@@ -71,7 +71,7 @@ export default async function ServerPage() {
       pageIndex = data?.page;
       return data.photos;
     });
-  const handleSearchKey = (keyValue) => {
+  const handleSearchKey = (keyValue: any) => {
     console.log("keyValue", keyValue);
   };
   expensiveFunction();
