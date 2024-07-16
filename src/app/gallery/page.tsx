@@ -79,7 +79,7 @@ export default async function ServerPage() {
   return (
     <>
       <Navbar />
-      <Searchbar handleSearchKey={handleSearchKey} searchKey={searchKey} />
+      <Searchbar searchKey={searchKey} />
       <Pagination
         prefixString=""
         searchQuery={searchKey}

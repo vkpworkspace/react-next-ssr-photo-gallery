@@ -2,9 +2,9 @@ import "../styles/searchbar.css";
 import { IoSearch } from "react-icons/io5";
 import { FaCamera } from "react-icons/fa6";
 
-const Searchbar = (searchKey: any) => {
+const Searchbar = (props: any) => {
   const maxCharLimit = 32;
-  var searchValue = searchKey;
+  var searchValue = props?.searchKey || "cars";
   const handleSearchInputChange = (e: { target: { value: any } }) => {
     const { value } = e.target;
     console.log("here search", value)
